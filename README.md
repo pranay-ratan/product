@@ -1,2 +1,2 @@
 # product
-holi
+Goal: Prototype by Christmas.
