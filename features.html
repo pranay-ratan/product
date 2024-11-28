@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Features - Platform Name</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #0a192f;
+            color: #e6f1ff;
+        }
+
+        .hero-section {
+            background: linear-gradient(rgba(10, 25, 47, 0.9), rgba(10, 25, 47, 0.9)),
+                        url('https://source.unsplash.com/random/1920x1080/?technology') no-repeat center center;
+            background-size: cover;
+            padding: 8rem 2rem 4rem;
+            text-align: center;
+        }
+
+        .hero-section h1 {
+            font-size: 3.5rem;
+            color: #64ffda;
+            margin-bottom: 1rem;
+            animation: fadeInUp 1s ease;
+        }
+
+        .hero-section p {
+            font-size: 1.2rem;
+            max-width: 600px;
+            margin: 0 auto 2rem;
+            color: #8892b0;
+            animation: fadeInUp 1s ease 0.2s;
+            animation-fill-mode: both;
+        }
+
+        .features-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2.5rem;
+            max-width: 1200px;
+            margin: -4rem auto 4rem;
+            padding: 0 2rem;
+            position: relative;
+            z-index: 2;
+        }
+
+        .feature-card {
+            background: rgba(26, 47, 78, 0.8);
+            border-radius: 15px;
+            padding: 2rem;
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(100, 255, 218, 0.1);
+            transition: all 0.3s ease;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            animation: fadeInUp 1s ease;
+            animation-fill-mode: both;
+        }
+
+        .feature-card:nth-child(2) { animation-delay: 0.2s; }
+        .feature-card:nth-child(3) { animation-delay: 0.4s; }
+        .feature-card:nth-child(4) { animation-delay: 0.6s; }
+        .feature-card:nth-child(5) { animation-delay: 0.8s; }
+        .feature-card:nth-child(6) { animation-delay: 1s; }
+
+        .feature-card:hover {
+            transform: translateY(-10px);
+            border-color: #64ffda;
+            box-shadow: 0 10px 30px rgba(100, 255, 218, 0.1);
+        }
+
+        .feature-icon {
+            font-size: 2.5rem;
+            color: #64ffda;
+            margin-bottom: 1.5rem;
+            transition: all 0.3s ease;
+        }
+
+        .feature-card:hover .feature-icon {
+            transform: scale(1.2);
+        }
+
+        .feature-card h3 {
+            font-size: 1.5rem;
+            color: #e6f1ff;
+            margin-bottom: 1rem;
+        }
+
+        .feature-card p {
+            color: #8892b0;
+            line-height: 1.6;
+            margin-bottom: 1.5rem;
+        }
+
+        .feature-details {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            text-align: left;
+            width: 100%;
+        }
+
+        .feature-details li {
+            margin-bottom: 0.5rem;
+            color: #8892b0;
+            display: flex;
+            align-items: center;
+        }
+
+        .feature-details li i {
+            color: #64ffda;
+            margin-right: 0.5rem;
+            font-size: 0.8rem;
+        }
+
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @media (max-width: 768px) {
+            .hero-section {
+                padding: 6rem 1rem 3rem;
+            }
+
+            .hero-section h1 {
+                font-size: 2.5rem;
+            }
+
+            .features-grid {
+                margin-top: -2rem;
+                gap: 1.5rem;
+            }
+        }
+
+        /* Add/Update these nav styles to match index.html */
+        nav {
+            background-color: rgba(10, 25, 47, 0.95);
+            padding: 1.5rem;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+            backdrop-filter: blur(10px);
+            box-shadow: 0 2px 20px rgba(0, 0, 0, 0.3);
+            transition: all 0.3s ease;
+        }
+
+        nav.scrolled {
+            padding: 1rem;
+            background-color: rgba(10, 25, 47, 0.98);
+        }
+
+        nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            gap: 3rem;
+        }
+
+        nav a {
+            color: #64ffda;
+            text-decoration: none;
+            font-weight: 500;
+            font-size: 1.1rem;
+            position: relative;
+            padding: 0.5rem 0;
+        }
+
+        nav a::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 0;
+            height: 2px;
+            background-color: #64ffda;
+            transition: width 0.3s ease;
+        }
+
+        nav a:hover::after {
+            width: 100%;
+        }
+
+        /* Add the scroll behavior */
+        @media (max-width: 768px) {
+            nav ul {
+                gap: 1.5rem;
+            }
+
+            nav a {
+                font-size: 1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="features.html">Features</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+
+    <section class="hero-section">
+        <h1>Powerful Features</h1>
+        <p>Discover the tools and capabilities that make our platform stand out from the rest</p>
+    </section>
+
+    <div class="features-grid">
+        <div class="feature-card">
+            <i class="fas fa-bolt feature-icon"></i>
+            <h3>High Performance</h3>
+            <p>Lightning-fast response times and optimized performance for seamless operation.</p>
+            <ul class="feature-details">
+                <li><i class="fas fa-check"></i> Quick load times</li>
+                <li><i class="fas fa-check"></i> Optimized caching</li>
+                <li><i class="fas fa-check"></i> Global CDN support</li>
+            </ul>
+        </div>
+
+        <div class="feature-card">
+            <i class="fas fa-shield-alt feature-icon"></i>
+            <h3>Advanced Security</h3>
+            <p>Enterprise-grade security measures to protect your data and privacy.</p>
+            <ul class="feature-details">
+                <li><i class="fas fa-check"></i> End-to-end encryption</li>
+                <li><i class="fas fa-check"></i> Regular security audits</li>
+                <li><i class="fas fa-check"></i> Compliance certified</li>
+            </ul>
+        </div>
+
+        <div class="feature-card">
+            <i class="fas fa-chart-line feature-icon"></i>
+            <h3>Analytics & Insights</h3>
+            <p>Comprehensive analytics tools to track and improve your performance.</p>
+            <ul class="feature-details">
+                <li><i class="fas fa-check"></i> Real-time monitoring</li>
+                <li><i class="fas fa-check"></i> Custom reports</li>
+                <li><i class="fas fa-check"></i> Data visualization</li>
+            </ul>
+        </div>
+
+        <!-- Add more feature cards as needed -->
+    </div>
+
+    <script>
+        window.addEventListener('scroll', () => {
+            const nav = document.querySelector('nav');
+            if (window.scrollY > 50) {
+                nav.classList.add('scrolled');
+            } else {
+                nav.classList.remove('scrolled');
+            }
+        });
+    </script>
+</body>
+</html> 
