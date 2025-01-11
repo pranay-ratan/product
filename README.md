@@ -1,2 +1,2 @@
 # product
-Goal: Prototype by Christmas.
+Goal: Prototype by Easter.
