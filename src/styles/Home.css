@@ -1,0 +1,38 @@
+/* Home.css */
+.home {
+  font-family: Arial, sans-serif;
+  padding: 20px;
+  background-color: #f9f9f9;
+  color: #333;
+}
+
+.home-header h1 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.home-features ul {
+  list-style: none;
+  padding: 0;
+}
+
+.home-features li {
+  margin: 5px 0;
+}
+
+.home-demo, .home-cta {
+  margin-top: 2rem;
+}
+
+button {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+

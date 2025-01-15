@@ -1,0 +1,21 @@
+.dashboard {
+    display: flex;
+    height: 100vh;
+  }
+  
+  .dashboard-main {
+    flex: 1;
+    padding: 20px;
+    background: #f9f9f9;
+  }
+  
+  .dashboard-widgets {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+  }
+  /* Default styles for Business Owner Dashboard */
+.dashboard {
+  margin: 1rem;
+  padding: 1rem;
+}
